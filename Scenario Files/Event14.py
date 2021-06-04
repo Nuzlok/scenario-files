@@ -59,7 +59,7 @@ def main():
                 tts.say("The vehicle's front right sensors detect a pedestrian ahead who is walking into the street.")
                 tts.say("Based on their trajectory the vehicle will brake and move to the left lane.")
             else:
-                tts.say("Speak The vehicle's front right sensors detect a large animal crossing the road ahead.")
+                tts.say("The vehicle's front right sensors detect a large animal crossing the road ahead.")
                 tts.say("Based on its trajectory the vehicle will brake and move to the left lane.")
     return 0.0
 
