@@ -14,11 +14,11 @@ from naoqi import ALProxy
 import socket
 
 # UNIVERSAL GLOBAL VARIABLES -- CHANGE AS NEEDED
-ROBOT = 0
+ROBOT = 1
 TRUST = 0
 SCENARIO = 0
-MILOIP = "127.0.0.1"
-NAOIP = "127.0.0.1"
+MILOIP = "172.29.60.143"
+NAOIP = "172.29.107.164"
 key = ""
 
 
@@ -896,7 +896,7 @@ if(ROBOT == 0):
 
 else:
 
-    tts = ALProxy("ALTextToSpeech", naoIP, 9559);
+    tts = ALProxy("ALTextToSpeech", NAOIP, 9559);
 
     if(TRUST == 0):
 
