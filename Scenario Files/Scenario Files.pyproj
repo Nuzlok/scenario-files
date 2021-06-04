@@ -1,0 +1,72 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>21f3cddb-892c-498b-8862-ba71a536fb71</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>EventMaster.py</StartupFile>
+    <SearchPath>..\..\..\..\..\..\..\..\..\Python-SDK\pynaoqi\lib;..\..\..\..\..\..\..\..\..\Python-SDK\pynaoqi\bin</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Scenario Files</Name>
+    <RootNamespace>Scenario Files</RootNamespace>
+    <InterpreterId>Global|PythonCore|2.7-32</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Event1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventMaster.py" />
+    <Compile Include="Event12.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Event13.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventEx.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Event14.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Event15.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Event22.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Event23.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Event24.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Event25.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LaptopIntegration.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|2.7" />
+    <InterpreterReference Include="Global|PythonCore|2.7-32" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
