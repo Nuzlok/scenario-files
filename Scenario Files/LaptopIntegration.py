@@ -16,7 +16,7 @@ import socket
 # UNIVERSAL GLOBAL VARIABLES -- CHANGE AS NEEDED
 ROBOT = 1
 TRUST = 0
-SCENARIO = 0
+SCENARIO = 1
 MILOIP = "172.29.60.143"
 NAOIP = "172.29.107.164"
 key = ""
@@ -36,7 +36,7 @@ def MR11(sock):
     if(key == "b"):
         return 0
     
-    sock.send("Speak Obstacle X yards ahead.\n")
+    sock.send("Speak Obstacle quarter mile ahead.\n")
     key = ""
 
     key = raw_input("press b to break")
@@ -54,7 +54,7 @@ def MR12(sock):
     if(key == "b"):
         return 0
     
-    sock.send("Speak It is expected to swerve in X yards.\n")
+    sock.send("Speak It is expected to swerve in 1000 feet.\n")
     key = ""
 
     key = raw_input("press b to break")
@@ -120,7 +120,7 @@ def MR15(sock):
 
     return 0
 
-#Scenatio 2 Reliable
+#Scenario 2 Reliable
 
 def MR21(sock):
 
@@ -128,7 +128,7 @@ def MR21(sock):
     if(key == "b"):
         return 0
     
-    sock.send("Speak Obstacle X yards ahead.\n")
+    sock.send("Speak Obstacle 700 feet ahead.\n")
     key = ""
 
     key = raw_input("press b to break")
@@ -220,7 +220,7 @@ def MU11(sock):
     if(key == "b"):
         return 0
     
-    sock.send("Speak Obstacle Y yards ahead.\n")
+    sock.send("Speak Obstacle 3 miles ahead.\n")
     key = ""
 
     key = raw_input("press b to break")
@@ -238,7 +238,7 @@ def MU12(sock):
     if(key == "b"):
         return 0
     
-    sock.send("Speak It is expected to swerve in Y yards.\n")
+    sock.send("Speak It is expected to swerve in 2 miles.\n")
     key = ""
 
     key = raw_input("press b to break")
@@ -312,7 +312,7 @@ def MU21(sock):
     if(key == "b"):
         return 0
     
-    sock.send("Speak Obstacle Y yards ahead.\n")
+    sock.send("Speak Obstacle 2 miles ahead.\n")
     key = ""
 
     key = raw_input("press b to break")
@@ -411,7 +411,7 @@ def NR11(tts):
     if(key == "b"):
         return 0
     
-    tts.say("Obstacle X yards ahead.")
+    tts.say("Obstacle quarter mile ahead.")
     key = ""
 
     key = raw_input("press b to break")
@@ -429,7 +429,7 @@ def NR12(tts):
     if(key == "b"):
         return 0
     
-    tts.say("It is expected to swerve in X yards.")
+    tts.say("It is expected to swerve in 1000 feet.")
     key = ""
 
     key = raw_input("press b to break")
@@ -503,7 +503,7 @@ def NR21(tts):
     if(key == "b"):
         return 0
     
-    tts.say("Obstacle X yards ahead.")
+    tts.say("Obstacle 700 feet ahead.")
     key = ""
 
     key = raw_input("press b to break")
@@ -595,7 +595,7 @@ def NU11(tts):
     if(key == "b"):
         return 0
     
-    tts.say("Obstacle Y yards ahead.")
+    tts.say("Obstacle 3 miles ahead.")
     key = ""
 
     key = raw_input("press b to break")
@@ -613,7 +613,7 @@ def NU12(tts):
     if(key == "b"):
         return 0
     
-    tts.say("It is expected to swerve in Y yards.")
+    tts.say("It is expected to swerve in 2 miles.")
     key = ""
 
     key = raw_input("press b to break")
@@ -687,7 +687,7 @@ def NU21(tts):
     if(key == "b"):
         return 0
     
-    tts.say("Obstacle Y yards ahead.")
+    tts.say("Obstacle 2 miles ahead.")
     key = ""
 
     key = raw_input("press b to break")
