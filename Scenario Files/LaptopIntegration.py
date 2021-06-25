@@ -20,6 +20,7 @@ SCENARIO = 1
 MILOIP = "172.29.60.143"
 NAOIP = "172.29.107.164"
 key = ""
+COUNT = 0
 
 
 ###############################
@@ -36,6 +37,7 @@ def MR11(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Obstacle quarter mile ahead.\n")
     key = ""
 
@@ -43,6 +45,7 @@ def MR11(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by front cameras.\n")
     key = ""
 
@@ -54,6 +57,7 @@ def MR12(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak It is expected to swerve in 1000 feet.\n")
     key = ""
 
@@ -61,6 +65,7 @@ def MR12(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by prediction program.\n")
     key = ""
 
@@ -72,6 +77,7 @@ def MR13(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak System Error.\n")
     key = ""
 
@@ -79,6 +85,7 @@ def MR13(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected in system's decison code.\n")
     key = ""
 
@@ -90,6 +97,7 @@ def MR14(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Based on the pedestrian's trajectory, the vehicle will brake and move to the left lane.\n")
     key = ""
 
@@ -97,6 +105,7 @@ def MR14(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by front right sensors.\n")
     key = ""
 
@@ -108,6 +117,7 @@ def MR15(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Heavy fog ahead.\n")
     key = ""
 
@@ -115,6 +125,7 @@ def MR15(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by vehicle's light sensors.\n")
     key = ""
 
@@ -128,6 +139,7 @@ def MR21(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Obstacle 700 feet ahead.\n")
     key = ""
 
@@ -135,6 +147,7 @@ def MR21(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by vehicle's front cameras.\n")
     key = ""
 
@@ -146,6 +159,7 @@ def MR22(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Sensor malfunction.\n")
     key = ""
 
@@ -153,6 +167,7 @@ def MR22(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected in system's test code.\n")
     key = ""
 
@@ -164,6 +179,7 @@ def MR23(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Based on the animal's trajectory, the vehicle will brake and move to the left lane.\n")
     key = ""
 
@@ -171,6 +187,7 @@ def MR23(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by front cameras.\n")
     key = ""
 
@@ -182,6 +199,7 @@ def MR24(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Heavy rain ahead.\n")
     key = ""
 
@@ -189,6 +207,7 @@ def MR24(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by vehicle's moisture sensors.\n")
     key = ""
 
@@ -200,6 +219,7 @@ def MR25(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak The vehicle is positioned on your left.\n")
     key = ""
 
@@ -207,6 +227,7 @@ def MR25(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected in system's decision model.\n")
     key = ""
 
@@ -220,6 +241,7 @@ def MU11(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Obstacle 3 miles ahead.\n")
     key = ""
 
@@ -227,6 +249,7 @@ def MU11(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by front cameras.\n")
     key = ""
 
@@ -238,6 +261,7 @@ def MU12(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak It is expected to swerve in 2 miles.\n")
     key = ""
 
@@ -245,6 +269,7 @@ def MU12(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by prediction program.\n")
     key = ""
 
@@ -256,6 +281,7 @@ def MU13(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak System Error.\n")
     key = ""
 
@@ -263,6 +289,7 @@ def MU13(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected in system's decison code.\n")
     key = ""
 
@@ -274,6 +301,7 @@ def MU14(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Based on the animal's trajectory, the vehicle will brake and move to the left lane.\n")
     key = ""
 
@@ -281,6 +309,7 @@ def MU14(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by front right sensors.\n")
     key = ""
 
@@ -292,6 +321,7 @@ def MU15(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Heavy rain ahead.\n")
     key = ""
 
@@ -299,6 +329,7 @@ def MU15(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by vehicle's moisture sensors.\n")
     key = ""
 
@@ -312,6 +343,7 @@ def MU21(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Obstacle 2 miles ahead.\n")
     key = ""
 
@@ -319,6 +351,7 @@ def MU21(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by vehicle's front cameras.\n")
     key = ""
 
@@ -330,6 +363,7 @@ def MU22(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Sensor Malfunction.\n")
     key = ""
 
@@ -337,6 +371,7 @@ def MU22(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected in system's test code.\n")
     key = ""
 
@@ -348,6 +383,7 @@ def MU23(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Based on their trajectory, the vehicle will brake and move to the left lane.\n")
     key = ""
 
@@ -355,6 +391,7 @@ def MU23(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by front cameras.\n")
     key = ""
 
@@ -366,6 +403,7 @@ def MU24(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak Heavy fog ahead.\n")
     key = ""
 
@@ -373,6 +411,7 @@ def MU24(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected by vehicle's light sensors.\n")
     key = ""
 
@@ -384,6 +423,7 @@ def MU25(sock):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     sock.send("Speak The vehicle is positioned on your right.\n")
     key = ""
 
@@ -391,6 +431,7 @@ def MU25(sock):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     sock.send("Speak Detected in system's decision model.\n")
     key = ""
 
@@ -411,6 +452,7 @@ def NR11(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Obstacle quarter mile ahead.")
     key = ""
 
@@ -418,6 +460,7 @@ def NR11(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by front cameras.")
     key = ""
 
@@ -429,6 +472,7 @@ def NR12(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("It is expected to swerve in 1000 feet.")
     key = ""
 
@@ -436,6 +480,7 @@ def NR12(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by prediction program.")
     key = ""
 
@@ -447,6 +492,7 @@ def NR13(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("System Error.")
     key = ""
 
@@ -454,6 +500,7 @@ def NR13(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected in system's decison code.")
     key = ""
 
@@ -465,6 +512,7 @@ def NR14(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Based on the pedestrian's trajectory, the vehicle will brake and move to the left lane.")
     key = ""
 
@@ -472,6 +520,7 @@ def NR14(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by front right sensors.")
     key = ""
 
@@ -483,6 +532,7 @@ def NR15(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Heavy fog ahead.")
     key = ""
 
@@ -490,6 +540,7 @@ def NR15(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by vehicle's light sensors.")
     key = ""
 
@@ -503,6 +554,7 @@ def NR21(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Obstacle 700 feet ahead.")
     key = ""
 
@@ -510,6 +562,7 @@ def NR21(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by vehicle's front cameras.")
     key = ""
 
@@ -521,6 +574,7 @@ def NR22(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Sensor malfunction.")
     key = ""
 
@@ -528,6 +582,7 @@ def NR22(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected in system's test code.")
     key = ""
 
@@ -539,6 +594,7 @@ def NR23(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Based on the animal's trajectory, the vehicle will brake and move to the left lane.")
     key = ""
 
@@ -546,6 +602,7 @@ def NR23(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by front cameras.")
     key = ""
 
@@ -557,6 +614,7 @@ def NR24(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Heavy rain ahead.")
     key = ""
 
@@ -564,6 +622,7 @@ def NR24(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by vehicle's moisture sensors.")
     key = ""
 
@@ -575,6 +634,7 @@ def NR25(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("The vehicle is positioned on your left.")
     key = ""
 
@@ -582,6 +642,7 @@ def NR25(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected in system's decision model.")
     key = ""
 
@@ -595,6 +656,7 @@ def NU11(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Obstacle 3 miles ahead.")
     key = ""
 
@@ -602,6 +664,7 @@ def NU11(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by front cameras.")
     key = ""
 
@@ -613,6 +676,7 @@ def NU12(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("It is expected to swerve in 2 miles.")
     key = ""
 
@@ -620,6 +684,7 @@ def NU12(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by prediction program.")
     key = ""
 
@@ -631,6 +696,7 @@ def NU13(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("System Error.")
     key = ""
 
@@ -638,6 +704,7 @@ def NU13(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected in system's decison code.")
     key = ""
 
@@ -649,6 +716,7 @@ def NU14(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Based on the animal's trajectory, the vehicle will brake and move to the left lane.")
     key = ""
 
@@ -656,6 +724,7 @@ def NU14(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by front right sensors.")
     key = ""
 
@@ -667,6 +736,7 @@ def NU15(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Heavy rain ahead.")
     key = ""
 
@@ -674,6 +744,7 @@ def NU15(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by vehicle's moisture sensors.")
     key = ""
 
@@ -687,6 +758,7 @@ def NU21(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Obstacle 2 miles ahead.")
     key = ""
 
@@ -694,6 +766,7 @@ def NU21(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by vehicle's front cameras.")
     key = ""
 
@@ -705,6 +778,7 @@ def NU22(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Sensor Malfunction.")
     key = ""
 
@@ -712,6 +786,7 @@ def NU22(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected in system's test code.")
     key = ""
 
@@ -723,6 +798,7 @@ def NU23(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Based on their trajectory, the vehicle will brake and move to the left lane.")
     key = ""
 
@@ -730,6 +806,7 @@ def NU23(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by front cameras.")
     key = ""
 
@@ -741,6 +818,7 @@ def NU24(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("Heavy fog ahead.")
     key = ""
 
@@ -748,6 +826,7 @@ def NU24(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected by vehicle's light sensors.")
     key = ""
 
@@ -759,6 +838,7 @@ def NU25(tts):
     if(key == "b"):
         return 0
     
+    COUNT = COUNT + 1
     tts.say("The vehicle is positioned on your right.")
     key = ""
 
@@ -766,6 +846,7 @@ def NU25(tts):
     if(key == "b"):
         return 0
 
+    COUNT = COUNT + 1
     tts.say("Detected in system's decision model.")
     key = ""
 
@@ -912,3 +993,5 @@ else:
 
         else:
             NaoUnreliable2(tts)
+
+print(COUNT)
